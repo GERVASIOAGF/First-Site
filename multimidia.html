@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+	    <title>Sport Clube do Recife - O Maior do Nordeste</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="stylesheet" href="multimidia.css"/>
+
+    </head>
+
+    <script language="javascript" src="funcoes.js"></script>
+
+<body>
+
+<div id="interface">
+	<header id="cabecalho">
+        <hgroup>
+            <h1>Sport Clube do Recife</h1>
+            <h2>O Maior do Nordeste</h2>
+	    </hgroup>
+	
+        <figure>
+	        <img id="icone" src="_imagens/play2.png" width="200"/>
+        </figure>
+
+        <nav id="menu">
+	        <h1>Menu Principal</h1>
+	        <ul type="disc">
+		        <li onmouseover="mudafoto('_imagens/ilha2.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="first site.html">Home</a></li>
+		        <li onmouseover="mudafoto('_imagens/escudo.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="historia.html">História</a></li>
+		        <li onmouseover="mudafoto('_imagens/cb2008.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="titulos.html">Títulos</a></li>
+		        <li onmouseover="mudafoto('_imagens/play2.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="multimidia.html">Multimídia</a></li>
+		        <li onmouseover="mudafoto('_imagens/camera.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="fotos.html">Fotos</a></li>
+		        <li onmouseover="mudafoto('_imagens/faleconosco.png')" onmouseout="mudafoto('_imagens/play2.png')"><a href="faleconosco.html">Fale Conosco</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="corpo-full">
+        <article id="principal">
+
+            <header id="cabecalho-artigo">
+                <hgrupo>
+			        <h3>Sport Clube do Recife > Multimídia</h3>
+			        <h1>Multimídia</h1>
+                </hgrupo>
+            </header>
+
+            <div id="tv-radio">
+                <audio id="hino" controls="controls">
+                    <source src="_multimidia/hino.mp3" type="audio/mpeg"/>
+                    Desculpe, mas não foi possivel carregar o áudio.
+                </audio>
+
+                <video id="grito" controls="controls" poster="_imagens/escudo Sport.png">
+                    <source src="_multimidia/grito.mp4" type="video/mp4"/>
+                    Desculpe, mas não foi possivel carregar o áudio.
+                </video>
+            </div>
+   
+            <iframe id="copa" 
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/idsnzrPcKkM?controls=0"
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+    
+
+        </article>    
+    </section>
+
+
+
+    <footer id="rodape">
+        <p>Copyrght &copy; 2020 - by Gervásio, AGF <br/> Facebook | Twitter	</p>
+    
+    </footer>
+    
+</div>
+</body>
+</html>

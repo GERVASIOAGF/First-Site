@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste JavaScript</title>
+    <meta charset="utf-8"/>
+    <script>
+        var rugido = false;
+        function oreidaselva(tipo) {
+            if (!rugido) {
+                document.getElementById("rei").src = "_imagens/" + tipo + ".png";
+                if (tipo == 'rugido') {
+                    rugido = true;
+                }
+            }    
+        }    
+    </script>
+</head>
+<body>
+    <h1>O Rei da Selva</h1>
+    <img src="_imagens/leao2.png" id="rei" onmousemove="oreidaselva('leao3')" onmouseout="oreidaselva('leao2')" onclick="oreidaselva('rugido')"/>
+
+
+</body>
+</html>

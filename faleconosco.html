@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+	    <title>Sport Clube do Recife - O Maior do Nordeste</title>
+        <link rel="stylesheet" href="estilo.css"/>
+        <link rel="stylesheet" href="faleconosco.css"/>
+
+    </head>
+    <script language="javascript" src="funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt (document.getElementById('cQtd').value);
+            tot = qtd * 250;
+            document.getElementById('cTot').value = tot;
+        }
+    </script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+        <hgroup>
+            <h1>Sport Clube do Recife</h1>
+            <h2>O Maior do Nordeste</h2>
+	    </hgroup>
+	
+        <figure>
+	        <img id="icone" src="_imagens/faleconosco.png" width="200"/>
+	    </figure>
+
+
+        <nav id="menu">        
+	        <ul type="disc">
+		        <li onmouseover="mudafoto('_imagens/ilha2.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="first site.html">Home</a></li>
+		        <li onmouseover="mudafoto('_imagens/escudo.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="historia.html">História</a></li>
+		        <li onmouseover="mudafoto('_imagens/cb2008.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="titulos.html">Títulos</a></li>
+		        <li onmouseover="mudafoto('_imagens/play2.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="multimidia.html">Multimídia</a></li>
+		        <li onmouseover="mudafoto('_imagens/camera.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="fotos.html">Fotos</a></li>
+		        <li onmouseover="mudafoto('_imagens/faleconosco.png')" onmouseout="mudafoto('_imagens/faleconosco.png')"><a href="faleconosco.html">Fale Conosco</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <article id="principal">
+
+            <header id="cabecalho-artigo">
+                <hgrupo>
+			        <h3>Sport Clube do Recife > fale Conosco</h3>
+			        <h1>Fale Conosco</h1>
+                </hgrupo>
+            </header>
+
+            <form method="post" id="fContato" action="mailto:gervasioagf@gmail.com" oninput="calc_total();">
+                
+                <fieldset id="usuario"><legend>Identifição do Usuário</legend>
+                        <p><label for="cNome"> Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                        <p><label for="cSenha"> Senha:</label> <input type="password" name="tSenha" id="cSenha" size="20" maxlength="8" placeholder="8 Dígitos"/></p>
+                        <p><label for="cMail"> E-mail:</label> <input type="email" name="tMail" id="cMail" size="20"/></p>
+                        <fieldset id="sexo"><legend>Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br>
+                            <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p><label for="cNas">Data de Nascimento: </label> <input type="date" name="tNas" id="cNas" size=""></p>
+                </fieldset>
+
+                <fieldset id="endereco"><legend>Endereço do Usuário</legend>
+                        <p><label for="cRua">Logradouro:</label> <input typt="text" name="tRua" id="cRua" size="20" maxlength="100" placeholder="Rua, Av, Travessa..."/></p>
+                        <p><label for="cNum"> Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999" placeholder="Número"/></p>
+                        <p><label for="cEst">Estado:</label> 
+                            <select name="tExt" id="cEst">
+                                <optgroup label="Região Norte">
+                                    <option value="AC">Acre</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="TO">Tocantis</option>
+                                </optgroup>
+
+                                <optgroup label="Região Nordeste">
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PI">Piauí</option>
+                                </optgroup>
+
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="GO">Goiás</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="DF">Distrito Federal</option>
+                                </optgroup>
+
+                                <optgroup label="Região Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option valeu="ES">Espírito Santo</option>
+                                </optgroup>
+
+                                <optgroup label="Região Sul">
+                                    <option valeu="RS">Rio Grande do Sul</option>
+                                    <option valeu="SC">Santa Catarina</option>
+                                    <option value="PR">Paraná</option>
+                                </optgroup>
+
+                            </select></p>
+                        <p><label for="cCid"> Cidade:</label> 
+                            <input type="text" name="tCid" id="cCid" size="20" maxlength="40" placeholder="Sua Cidade" list="Cidades"/></p>
+                            <datalist id="Cidades">
+                                <option value="Rio de Janeiro"></option>
+                                <option value="Nova Iguaçu"></option>
+                                <option value="Recife"></option>
+                            </datalist>
+                
+                </fieldset>
+
+                <fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+                        <p><label for="cUrg"> Grau de Urgência: </label>
+                            Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5"/>Máx
+                        </p>
+                        <p><label for="cMsg"> Mensagem: </label>
+                            <textarea name="tMSG" id="cMSG" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                        </p>
+                </fieldset>
+
+                <fieldset id="pedido"><legend>Quero um Camisa Oficial</legend>
+                        <p><input type="checkbox" name="tPed" id="cPed" checked/>
+                        <label for="cPed"> Gostaria de adquirir uma Camisa Oficial quando disponível </label></p>
+                        <p><label for="cCor"> Cor: </label>
+                            <select type="text" name="tColor" id="cColor">
+                                <option>Branco</option>
+                                <option>Vermelho-Preto</option>
+                            </select>
+                        </p>
+                        <p><label for="cQtd"> Quantidade: </label><input type="number" name="tQtd" id="cQtd" min="1" max="10" value="1"/></p>
+                        <p><label for="cTot"> Preço Total: R$ </label><input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
+                </fieldset>
+                
+                <input type="image" name="tEnviar" id="enviar" src="_imagens/enviar.png"/>   
+                
+            </form>
+        </article>
+    </section>
+
+
+    <footer id="rodape">
+	<p>Copyrght &copy; 2020 - by Gervásio, AGF <br/> Facebook | Twitter	</p>
+
+    </footer>
+
+
+
+</div>
+</body>
+</html>

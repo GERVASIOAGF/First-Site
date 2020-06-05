@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+input, textarea, select {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+input:hover, textarea:hover, select:hover {
+    background-color: #dddddd;
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #cecece;
+    margin: 20px;
+    box-shadow: 0px 0px 20px #cecece;
+}
+
+fieldset#sexo {
+    width: 150px;
+    box-shadow: none;
+}
+
+fieldset#usuario {
+    background: url("_imagens/escudo Sport.png") no-repeat 100% 5%;
+}
+
+fieldset#endereco {
+    background: url("_imagens/ilha2.png") no-repeat 100% 5%;
+}
+
+fieldset#mensagem {
+    background: url("_imagens/urg.png") no-repeat 100% 95%;
+}
+
+fieldset#pedido {
+    background: url("_imagens/camisa.png") no-repeat 100% 65%;
+}
+
+input#enviar {
+    width: 200px;
+    margin: 10px 0px 15px 200px;
+    
+}

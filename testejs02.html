@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Teste JavaScript</title>
+    <meta charset="utf-8"/>
+    <script>
+        function oreidaselva() {
+            document.getElementById("rei").src = "_imagens/leao3.png";
+        }
+        function retornodorei() {
+            document.getElementById("rei").src = "_imagens/leao2.png";
+        }
+        function rugido() {
+            document.getElementById("rei").src="_imagens/rugido.png";
+        }
+    </script>
+</head>
+<body>
+    <h1>O Rei da Selva</h1>
+    <img src="_imagens/leao2.png" id="rei" onmousemove="oreidaselva()" onmouseout="retornodorei()" onclick="rugido()"/>
+
+
+</body>
+</html>
